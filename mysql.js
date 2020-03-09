@@ -10,13 +10,6 @@ const pool = mysql.createPool({
     queueLimit: 0
 });
 
-// example query:
-//
-// pool.query('show tables', function(err, rows, fields) {
-//     // Connection is automatically released when query resolves
-//     console.log(rows);
-// });
-
 async function related(artist1, artist2) {
     // TODO
     console.log(`TODO: provide your implementation to test whether ${artist1} is related with ${artist2}`);
