@@ -12,7 +12,7 @@ async function search(artist1, limit) {
 
 (async () => {
     try {
-        db = await mongoose.connect('mongodb://bdognom-v2.cs.brown.edu/cdquery1', {
+        await mongoose.connect('mongodb://bdognom-v2.cs.brown.edu/cdquery1', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             user: 'cs132',
